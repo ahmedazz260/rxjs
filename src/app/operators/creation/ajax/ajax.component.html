@@ -1,0 +1,8 @@
+<h4>Ajax Operators:</h4>
+<div *ngIf="users$ | async as user">
+  <p>id:{{user.response.id}}</p>
+  <p>first name:{{user.response.first_name}}</p>
+  <p>middle name:{{user.response.middle_name}}</p>
+  <p>last name:{{user.response.last_name}}</p>
+  <p>full name:{{user.response.first_name}} {{user.response.middle_name}} {{user.response.last_name}}</p>
+</div>
